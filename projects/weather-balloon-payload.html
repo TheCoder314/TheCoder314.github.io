@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weather balloon payload | Aarit Dixit</title>
+<meta name="description" content="A low-cost data-logging probe for weather balloons: two IMUs, two gas sensors, a barometer, GPS and a temperature and humidity sensor, logged to two microSD cards, all inside a 50 mL test tube.">
+<meta property="og:title" content="Weather balloon payload | Aarit Dixit">
+<meta property="og:description" content="A sensor probe that rides a weather balloon and fits inside a 50 mL test tube.">
+<meta property="og:image" content="../assets/img/payload-pcb-board.png">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315212E'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%23F2F4F5'%3EAD%3C/text%3E%3Ccircle cx='51' cy='16' r='5' fill='%23E3710B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script data-goatcounter="https://ad314159.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="name" href="../"><i aria-hidden="true"></i>Aarit Dixit</a>
+    <nav aria-label="Sections">
+      <a href="../#projects">Projects</a>
+      <a href="../#about">About</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+  <section class="proj-hero">
+    <div class="wrap">
+      <div class="intro">
+        <p class="crumbs"><a href="../#projects">Projects</a> / Weather balloon payload</p>
+        <h1>Weather balloon payload</h1>
+        <p class="statement">A low-cost probe that rides a weather balloon, logs the atmosphere on the way up, and fits inside a 50 mL test tube.</p>
+        <p class="proj-meta">
+          <span><b>When</b> 2026</span>
+          <span><b>Status</b> In development</span>
+          <span><b>What I did</b> PCB design, sensor selection, CAD</span>
+          <span><b>Tools</b> KiCad, Onshape</span>
+        </p>
+        <div class="actions">
+          <a class="btn" href="mailto:dixitaarit@gmail.com?subject=Weather%20balloon%20payload" data-goatcounter-click="payload-email">Ask me about it</a>
+          <a class="btn line" href="../#projects">Back to projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:.5rem">
+    <div class="wrap">
+      <div class="dark-band" data-play-on-view style="display:grid;place-items:center;padding-block:clamp(2rem,5vw,3.5rem)">
+        <svg class="tube" viewBox="0 0 660 250" role="img" aria-label="The payload circuit board sliding into a test tube drawn to scale: 100 mm long and 25 mm across.">
+          <defs><clipPath id="tubeInside2"><path d="M534 77H132.5a52.5 52.5 0 0 0 0 105H534z"/></clipPath></defs>
+          <g clip-path="url(#tubeInside2)"><g class="board"><image href="../assets/img/payload-pcb-board.png" x="96" y="83" width="380" height="94" preserveAspectRatio="none"/></g></g>
+          <path class="glass" d="M538 72H132.5a57.5 57.5 0 0 0 0 115H538"/>
+          <path class="glass" d="M538 72l6 -7M538 187l6 7" style="fill:none"/>
+          <path class="shine" d="M160 84H500"/>
+          <g class="dim" aria-hidden="true">
+            <line x1="75" y1="64" x2="75" y2="26"/><line x1="538" y1="62" x2="538" y2="26"/>
+            <line x1="75" y1="34" x2="538" y2="34"/>
+            <path class="arrow" d="M75 34l12 -4v8z"/><path class="arrow" d="M538 34l-12 -4v8z"/>
+            <text x="306" y="24" text-anchor="middle">100 mm</text>
+            <line x1="548" y1="72" x2="590" y2="72"/><line x1="548" y1="187" x2="590" y2="187"/>
+            <line x1="582" y1="72" x2="582" y2="187"/>
+            <path class="arrow" d="M582 72l-4 12h8z"/><path class="arrow" d="M582 187l-4 -12h8z"/>
+            <text x="600" y="134">Ø25</text>
+          </g>
+          <text class="note" x="306" y="226" text-anchor="middle">Everything fits inside a 50 mL test tube</text>
+        </svg>
+      </div>
+
+      <div class="prose" data-reveal>
+        <h2>The idea</h2>
+        <p>Weather balloons carry instruments into the upper atmosphere, and the instruments are usually the expensive part. This payload is meant to be cheap enough to build again and again, while still recording a full picture of each flight: how the probe moves, what the air is made of, its pressure, temperature and humidity, and exactly where every reading was taken.</p>
+        <p>The hard constraint is size. The board, battery and housing all have to fit inside a 50 mL test tube, 25 mm across and 100 mm long, which makes it light and gives it a tough, sealed shell for free.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2>What's on the board</h2>
+        <p>Five kinds of sensor and two places to store what they measure.</p>
+      </div>
+      <!-- Part numbers below are read from the KiCad layout. Double-check them against the final schematic. -->
+      <div class="sensors" data-reveal>
+        <article class="sensor"><span class="qty">×2</span><h3>IMUs</h3><p>Measure acceleration and rotation as the probe climbs, swings under the balloon and falls. Two units cross-check each other.</p></article>
+        <article class="sensor"><span class="qty">×2</span><h3>Gas sensors</h3><p>Track air quality, including volatile organic compounds, as the probe rises.</p><span class="part">ENS160</span></article>
+        <article class="sensor"><h3>Barometer</h3><p>Measures air pressure, which gives altitude and the vertical profile of the flight.</p><span class="part">MS5611</span></article>
+        <article class="sensor"><h3>GPS</h3><p>Ties every reading to a place and an altitude, and helps find the probe after landing.</p><span class="part">u-blox SAM-M8Q</span></article>
+        <article class="sensor"><h3>Temperature and humidity</h3><p>Shows how the air cools and dries with height.</p><span class="part">BME280</span></article>
+        <article class="sensor"><span class="qty">×2</span><h3>microSD cards</h3><p>Every reading is logged to both cards, so one failed card doesn't cost the flight.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="dark-band" data-reveal>
+        <h2>How the data flows</h2>
+        <p style="margin-top:.8rem">Each sensor reports to the microcontroller, which timestamps the readings and writes them to both microSD cards.</p>
+        <div style="margin-top:1.8rem">
+<svg class="flow flow-h" viewBox="0 0 900 360" role="img" aria-label="Data flow: two IMUs, two gas sensors, a barometer, a temperature and humidity sensor and GPS all feed the microcontroller, which writes every reading to two microSD cards."><path class="wire" d="M250 48C320 48 320 180 380 180"/><path class="wire" d="M250 112C320 112 320 180 380 180"/><path class="wire" d="M250 176C320 176 320 180 380 180"/><path class="wire" d="M250 240C320 240 320 180 380 180"/><path class="wire" d="M250 304C320 304 320 180 380 180"/><path class="wire" d="M560 180C610 180 610 124 660 124"/><path class="wire" d="M560 180C610 180 610 236 660 236"/><path class="pulse-line" pathLength="100" style="animation-delay:-0.00s" d="M250 48C320 48 320 180 380 180"/><path class="pulse-line" pathLength="100" style="animation-delay:-0.45s" d="M250 112C320 112 320 180 380 180"/><path class="pulse-line" pathLength="100" style="animation-delay:-0.90s" d="M250 176C320 176 320 180 380 180"/><path class="pulse-line" pathLength="100" style="animation-delay:-1.35s" d="M250 240C320 240 320 180 380 180"/><path class="pulse-line" pathLength="100" style="animation-delay:-1.80s" d="M250 304C320 304 320 180 380 180"/><path class="pulse-line out" pathLength="100" style="animation-delay:-0.00s" d="M560 180C610 180 610 124 660 124"/><path class="pulse-line out" pathLength="100" style="animation-delay:-1.20s" d="M560 180C610 180 610 236 660 236"/><g class="box"><rect x="20" y="24" width="230" height="48" rx="10"/><text x="40" y="53">IMU</text><text class="small" x="230" y="53" text-anchor="end">×2</text></g><g class="box"><rect x="20" y="88" width="230" height="48" rx="10"/><text x="40" y="117">Gas sensor</text><text class="small" x="230" y="117" text-anchor="end">×2</text></g><g class="box"><rect x="20" y="152" width="230" height="48" rx="10"/><text x="40" y="181">Barometer</text></g><g class="box"><rect x="20" y="216" width="230" height="48" rx="10"/><text x="40" y="245">Temp + humidity</text></g><g class="box"><rect x="20" y="280" width="230" height="48" rx="10"/><text x="40" y="309">GPS</text></g><g class="box sd"><rect x="660" y="100" width="220" height="48" rx="10"/><text x="680" y="129">microSD card A</text></g><g class="box sd"><rect x="660" y="212" width="220" height="48" rx="10"/><text x="680" y="241">microSD card B</text></g><g class="box mcu"><rect x="380" y="140" width="180" height="80" rx="12"/><text x="470" y="176" text-anchor="middle">Microcontroller</text><text class="small" x="470" y="198" text-anchor="middle">reads, timestamps, logs</text></g></svg>
+<svg class="flow flow-v" viewBox="0 0 360 560" role="img" aria-label="Data flow: five kinds of sensors feed the microcontroller, which writes every reading to two microSD cards."><path class="wire" d="M95 66C95 126 180 240 180 300"/><path class="wire" d="M265 66C265 126 180 240 180 300"/><path class="wire" d="M95 136C95 196 180 240 180 300"/><path class="wire" d="M265 136C265 196 180 240 180 300"/><path class="wire" d="M180 206C180 266 180 240 180 300"/><path class="wire" d="M180 376C180 420 95 420 95 470"/><path class="wire" d="M180 376C180 420 265 420 265 470"/><path class="pulse-line" pathLength="100" style="animation-delay:-0.00s" d="M95 66C95 126 180 240 180 300"/><path class="pulse-line" pathLength="100" style="animation-delay:-0.45s" d="M265 66C265 126 180 240 180 300"/><path class="pulse-line" pathLength="100" style="animation-delay:-0.90s" d="M95 136C95 196 180 240 180 300"/><path class="pulse-line" pathLength="100" style="animation-delay:-1.35s" d="M265 136C265 196 180 240 180 300"/><path class="pulse-line" pathLength="100" style="animation-delay:-1.80s" d="M180 206C180 266 180 240 180 300"/><path class="pulse-line out" pathLength="100" style="animation-delay:-0.00s" d="M180 376C180 420 95 420 95 470"/><path class="pulse-line out" pathLength="100" style="animation-delay:-1.20s" d="M180 376C180 420 265 420 265 470"/><g class="box"><rect x="20" y="20" width="150" height="46" rx="10"/><text x="95" y="48" text-anchor="middle">IMU ×2</text></g><g class="box"><rect x="190" y="20" width="150" height="46" rx="10"/><text x="265" y="48" text-anchor="middle">Gas sensor ×2</text></g><g class="box"><rect x="20" y="90" width="150" height="46" rx="10"/><text x="95" y="118" text-anchor="middle">Barometer</text></g><g class="box"><rect x="190" y="90" width="150" height="46" rx="10"/><text x="265" y="118" text-anchor="middle">Temp + humidity</text></g><g class="box"><rect x="105" y="160" width="150" height="46" rx="10"/><text x="180" y="188" text-anchor="middle">GPS</text></g><g class="box mcu"><rect x="90" y="300" width="180" height="76" rx="12"/><text x="180" y="334" text-anchor="middle">Microcontroller</text><text class="small" x="180" y="356" text-anchor="middle">reads, timestamps, logs</text></g><g class="box sd"><rect x="20" y="470" width="150" height="46" rx="10"/><text x="95" y="498" text-anchor="middle">microSD A</text></g><g class="box sd"><rect x="190" y="470" width="150" height="46" rx="10"/><text x="265" y="498" text-anchor="middle">microSD B</text></g></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2>Designing to fit</h2>
+        <p>The housing and the board were designed together around the tube.</p>
+      </div>
+      <div class="gallery" data-reveal style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))">
+        <figure><img src="../assets/img/payload-cad.jpg" width="1156" height="260" loading="lazy" alt="Cutaway CAD model of the payload housing with the battery inside." style="background:#E7ECF1"><figcaption>Housing and battery in Onshape.</figcaption></figure>
+        <figure><img src="../assets/img/payload-pcb-layout.png" width="1275" height="627" loading="lazy" alt="KiCad layout of the payload board."><figcaption>PCB layout in KiCad. Some parts are still being placed.</figcaption></figure>
+      </div>
+
+      <div class="prose" data-reveal>
+        <h2>Status</h2>
+        <p>The board layout and the housing are in progress. Photos of the build, flight data and the design files will be added here as the project moves forward.</p>
+        <!-- PLACEHOLDERS: add build photos, a flight data chart and a download link here, e.g.
+             <div class="gallery"> <figure><img src="../assets/img/payload-build-1.jpg" ...><figcaption>...</figcaption></figure> </div>
+             <p><a class="btn" href="../files/payload-files.zip" download>Download the files</a></p> -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> Aarit Dixit</span>
+    <a href="../">Back to home</a>
+  </div>
+</footer>
+<script src="../main.js" defer></script>
+</body>
+</html>

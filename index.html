@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aarit Dixit</title>
+<meta name="description" content="Aarit Dixit designs and builds things that fly: airframes, circuit boards and the code that runs them. Projects include R.A.M.P.A.T., an open-source 3D-printed tiltrotor, and a weather balloon payload that fits in a test tube.">
+<meta property="og:title" content="Aarit Dixit">
+<meta property="og:description" content="Aircraft, circuit boards and the code that runs them. Home of R.A.M.P.A.T. and a test-tube-sized weather balloon payload.">
+<meta property="og:image" content="assets/img/rampat-render.webp">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315212E'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%23F2F4F5'%3EAD%3C/text%3E%3Ccircle cx='51' cy='16' r='5' fill='%23E3710B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+<!-- GoatCounter analytics (no cookies). Dashboard: https://ad314159.goatcounter.com -->
+<script data-goatcounter="https://ad314159.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<a class="skip" href="#projects">Skip to projects</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="name" href="#top"><i aria-hidden="true"></i>Aarit Dixit</a>
+    <nav aria-label="Sections">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="intro">
+        <h1>Aarit Dixit</h1>
+        <p class="statement">I design and build things that fly: the airframes, the circuit boards, and the code that runs them.</p>
+        <p class="sub">My tiltrotor drone, R.A.M.P.A.T., costs under $1,000 and is open for anyone to build. Next up is a sensor probe small enough to ride a weather balloon inside a test tube.</p>
+        <a class="now" href="#payload" data-goatcounter-click="hero-now-building"><span class="pulse" aria-hidden="true"></span><span><b>Now building:</b> a weather balloon payload</span></a>
+        <div class="actions">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn line" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <figure class="plan" id="plan">
+        <svg viewBox="-170 -230 2142 1883" role="img" aria-labelledby="planTitle planDesc">
+          <title id="planTitle">Plan view of R.A.M.P.A.T.</title>
+          <desc id="planDesc">Technical drawing of the aircraft seen from above, generated from its CAD model. Wingspan 1,742 mm, length 1,593 mm. Callouts mark the tilting rotors, fuselage, printed wing and V-tail.</desc>
+          <defs>
+            <clipPath id="planReveal"><rect id="planRevealRect" x="-170" y="-230" width="2142" height="1883"/></clipPath>
+          </defs>
+          <g clip-path="url(#planReveal)">
+            <image href="assets/img/rampat-plan.svg" x="0" y="0" width="1742" height="1592.7"/>
+          </g>
+          <line class="scan" id="planScan" x1="-40" x2="1782" y1="0" y2="0"/>
+          <g class="dims late" aria-hidden="true">
+            <line x1="0" y1="400" x2="0" y2="-150"/>
+            <line x1="1742" y1="400" x2="1742" y2="-150"/>
+            <line x1="0" y1="-110" x2="1742" y2="-110"/>
+            <path d="M0 -110l46 -13v26z" style="fill:var(--accent);stroke:none"/>
+            <path d="M1742 -110l-46 -13v26z" style="fill:var(--accent);stroke:none"/>
+            <text x="871" y="-138" text-anchor="middle">1,742 mm</text>
+            <line x1="930" y1="0" x2="1900" y2="0"/>
+            <line x1="1140" y1="1592.7" x2="1900" y2="1592.7"/>
+            <line x1="1860" y1="0" x2="1860" y2="1592.7"/>
+            <path d="M1860 0l-13 46h26z" style="fill:var(--accent);stroke:none"/>
+            <path d="M1860 1592.7l-13 -46h26z" style="fill:var(--accent);stroke:none"/>
+            <text x="1920" y="796" text-anchor="middle" transform="rotate(-90 1920 796)">1,593 mm</text>
+          </g>
+          <g class="leaders late" aria-hidden="true">
+            <line x1="560" y1="250" x2="190" y2="92"/><circle class="dot" cx="190" cy="92"/>
+            <line x1="1260" y1="250" x2="900" y2="380"/><circle class="dot" cx="900" cy="380"/>
+            <line x1="380" y1="820" x2="470" y2="505"/><circle class="dot" cx="470" cy="505"/>
+            <line x1="470" y1="1330" x2="720" y2="1490"/><circle class="dot" cx="720" cy="1490"/>
+          </g>
+          <g class="late" aria-hidden="true">
+            <g class="balloon" data-k="1"><circle cx="560" cy="250"/><text x="560" y="252">1</text></g>
+            <g class="balloon" data-k="2"><circle cx="1260" cy="250"/><text x="1260" y="252">2</text></g>
+            <g class="balloon" data-k="3"><circle cx="380" cy="820"/><text x="380" y="822">3</text></g>
+            <g class="balloon" data-k="4"><circle cx="470" cy="1330"/><text x="470" y="1332">4</text></g>
+          </g>
+        </svg>
+        <ol class="legend" aria-label="Drawing callouts">
+          <li data-k="1"><b>1</b><span><strong>Tilting rotors.</strong> Three motors swing from hover to cruise.</span></li>
+          <li data-k="2"><b>2</b><span><strong>Fuselage.</strong> Holds the battery, flight controller and thermal camera.</span></li>
+          <li data-k="3"><b>3</b><span><strong>Printed wing.</strong> NACA 6409 panels slotted onto a carbon-fiber spar.</span></li>
+          <li data-k="4"><b>4</b><span><strong>V-tail.</strong> Two surfaces handle both pitch and yaw.</span></li>
+        </ol>
+        <figcaption>R.A.M.P.A.T. from above, drawn straight from its flight CAD.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2>Projects</h2>
+        <p>Things I've designed, built and tested end to end, with the files shared so you can build on them too.</p>
+      </div>
+
+      <div class="projects">
+
+        <!-- R.A.M.P.A.T. -->
+        <article class="proj" id="rampat" data-reveal>
+          <div class="stage-wrap">
+            <div class="stage navy" data-stage>
+              <figure class="slide on">
+                <img class="shadow" src="assets/img/rampat-render.webp" width="1163" height="693" alt="Render of R.A.M.P.A.T. with its blue printed wing, white fuselage, V-tail and three orange tilting rotors.">
+                <figcaption>The final airframe</figcaption>
+              </figure>
+              <figure class="slide light">
+                <img src="assets/img/rampat-cfd-geometry-7.jpg" width="786" height="471" loading="lazy" alt="Final airframe colored by surface pressure from a CFD simulation.">
+                <figcaption>CFD: 73% less drag than geometry 1</figcaption>
+              </figure>
+              <figure class="slide photo">
+                <img src="assets/img/rampat-pcb-photo.jpg" width="1200" height="1600" loading="lazy" alt="Assembled purple flight controller board with a microcontroller module and power connectors." style="object-position:50% 38%">
+                <figcaption>The $75 custom flight controller</figcaption>
+              </figure>
+              <figure class="slide">
+                <img class="shadow" src="assets/img/rampat-iteration-2.webp" width="941" height="553" loading="lazy" alt="Render of the earlier, boxier second airframe.">
+                <figcaption>Iteration 2, before CFD and carbon fiber</figcaption>
+              </figure>
+              <div class="bars" role="group" aria-label="Choose an image"></div>
+              <span class="glare" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="info">
+            <p class="kicker"><span class="status">Flight tested</span>2024 to 2026</p>
+            <h3><a href="https://thecoder314.github.io/rampat/">R.A.M.P.A.T.</a></h3>
+            <p class="full">Rapid, Affordable, Modular, Printed, Aerial Tiltrotor</p>
+            <p>A tiltrotor drone for first responders. It takes off like a helicopter, tilts its rotors forward to fly on its wing, and matches $10,000 commercial aircraft on endurance and search area.</p>
+            <dl class="facts">
+              <div><dt>Materials cost</dt><dd data-count="978" data-prefix="$">$978</dd></div>
+              <div><dt>Flight time</dt><dd data-count="178" data-suffix=" min">178 min</dd></div>
+              <div><dt>Lift to drag</dt><dd data-count="12.1" data-dec="1">12.1</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Disciplines">
+              <li>CAD</li><li>3D printing</li><li>PCB design</li><li>CFD</li><li>Flight control</li>
+            </ul>
+            <div class="actions">
+              <a class="btn" href="https://thecoder314.github.io/rampat/" data-goatcounter-click="proj-rampat">Visit the project site</a>
+              <a class="btn line" href="https://thecoder314.github.io/rampat/files/RAMPAT-all-files.zip" download data-goatcounter-click="proj-rampat-download">Download the files</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Weather balloon payload -->
+        <article class="proj flip" id="payload" data-reveal>
+          <div class="stage-wrap">
+            <div class="stage slate" data-stage>
+              <figure class="slide on" data-play>
+                <svg class="tube" viewBox="0 0 660 250" role="img" aria-label="The payload circuit board sliding into a test tube drawn to scale: 100 mm long and 25 mm across.">
+                  <defs>
+                    <clipPath id="tubeInside"><path d="M534 77H132.5a52.5 52.5 0 0 0 0 105H534z"/></clipPath>
+                  </defs>
+                  <g clip-path="url(#tubeInside)">
+                    <g class="board"><image href="assets/img/payload-pcb-board.png" x="96" y="83" width="380" height="94" preserveAspectRatio="none"/></g>
+                  </g>
+                  <path class="glass" d="M538 72H132.5a57.5 57.5 0 0 0 0 115H538"/>
+                  <path class="glass" d="M538 72l6 -7M538 187l6 7" style="fill:none"/>
+                  <path class="shine" d="M160 84H500"/>
+                  <g class="dim" aria-hidden="true">
+                    <line x1="75" y1="64" x2="75" y2="26"/><line x1="538" y1="62" x2="538" y2="26"/>
+                    <line x1="75" y1="34" x2="538" y2="34"/>
+                    <path class="arrow" d="M75 34l12 -4v8z"/><path class="arrow" d="M538 34l-12 -4v8z"/>
+                    <text x="306" y="24" text-anchor="middle">100 mm</text>
+                    <line x1="548" y1="72" x2="590" y2="72"/><line x1="548" y1="187" x2="590" y2="187"/>
+                    <line x1="582" y1="72" x2="582" y2="187"/>
+                    <path class="arrow" d="M582 72l-4 12h8z"/><path class="arrow" d="M582 187l-4 -12h8z"/>
+                    <text x="600" y="134">Ø25</text>
+                  </g>
+                  <text class="note" x="306" y="226" text-anchor="middle">Everything fits inside a 50 mL test tube</text>
+                </svg>
+                <figcaption>To scale: board and tube</figcaption>
+              </figure>
+              <figure class="slide light">
+                <img src="assets/img/payload-cad.jpg" width="1156" height="260" loading="lazy" alt="Cutaway CAD model of the payload housing with the battery inside the tube.">
+                <figcaption>CAD: housing and battery</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="assets/img/payload-pcb-layout.png" width="1275" height="627" loading="lazy" alt="KiCad layout of the payload board with GPS, gas sensors, microcontroller and two microSD slots.">
+                <figcaption>PCB layout in KiCad, in progress</figcaption>
+              </figure>
+              <div class="bars" role="group" aria-label="Choose an image"></div>
+              <span class="glare" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="info">
+            <p class="kicker"><span class="status wip">In development</span>2026</p>
+            <h3><a href="projects/weather-balloon-payload.html">Weather balloon payload</a></h3>
+            <p class="full">A low-cost data-logging probe that fits in a test tube</p>
+            <p>A sensor probe that rides a weather balloon and records the atmosphere on the way up: two IMUs, two gas sensors, a barometer, GPS, and a temperature and humidity sensor, all logged to two microSD cards.</p>
+            <dl class="facts">
+              <div><dt>Fits inside</dt><dd>25×100 mm</dd></div>
+              <div><dt>Sensor types</dt><dd data-count="5">5</dd></div>
+              <div><dt>microSD cards</dt><dd data-count="2">2</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Disciplines">
+              <li>PCB design</li><li>Sensors</li><li>Data logging</li><li>CAD</li>
+            </ul>
+            <div class="actions">
+              <a class="btn" href="projects/weather-balloon-payload.html" data-goatcounter-click="proj-payload">Read about it</a>
+            </div>
+          </div>
+        </article>
+
+        <!--
+          ADDING ANOTHER PROJECT
+          Copy one of the <article class="proj"> blocks above and change its text and images.
+          Add class="proj flip" to put the images on the right. Each <figure class="slide"> is one image
+          in the auto-playing gallery; the first one needs class="slide on".
+          For a full write-up, copy projects/_template.html.
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TOOLBOX ===================== -->
+  <section class="section" id="tools">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2>What I work with</h2>
+        <p>The tools and methods behind these projects. Pick a project to see what it used.</p>
+      </div>
+      <div class="filter" role="group" aria-label="Show tools used by" data-reveal>
+        <button type="button" data-f="all" aria-pressed="true">Everything</button>
+        <button type="button" data-f="r" aria-pressed="false">R.A.M.P.A.T.</button>
+        <button type="button" data-f="p" aria-pressed="false">Weather balloon payload</button>
+      </div>
+      <dl class="tools" id="tools-list" data-reveal>
+        <div><dt>Mechanical design</dt><dd>
+          <span class="tool" data-p="r p">Onshape</span><span class="tool" data-p="r p">Design for 3D printing</span><span class="tool" data-p="r">LW-PETG and carbon fiber</span><span class="tool" data-p="r">Slot-together modular parts</span><span class="tool" data-p="p">Compact enclosures</span>
+        </dd></div>
+        <div><dt>Electronics</dt><dd>
+          <span class="tool" data-p="r p">KiCad</span><span class="tool" data-p="r p">PCB layout</span><span class="tool" data-p="r p">Sensor integration</span><span class="tool" data-p="p">GPS</span><span class="tool" data-p="r">Radio telemetry</span><span class="tool" data-p="p">Power regulation</span>
+        </dd></div>
+        <div><dt>Aerodynamics</dt><dd>
+          <span class="tool" data-p="r">SimScale CFD</span><span class="tool" data-p="r">Mesh-independence studies</span><span class="tool" data-p="r">Airfoil selection</span>
+        </dd></div>
+        <div><dt>Software and data</dt><dd>
+          <span class="tool" data-p="r p">Microcontroller firmware</span><span class="tool" data-p="r p">Logging to microSD</span><span class="tool" data-p="r">PID control and mixing</span><span class="tool" data-p="r">Python and Matplotlib</span><span class="tool" data-p="r">LaTeX</span>
+        </dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="wrap about" data-reveal>
+      <h2>About</h2>
+      <div class="text">
+        <!-- Add a photo here if you like:
+             <img src="assets/img/me.jpg" width="800" height="1000" alt="Aarit Dixit" style="border-radius:12px;margin-bottom:1.5rem;max-width:320px"> -->
+        <p>I'm Aarit Dixit, and I build things that fly. R.A.M.P.A.T. began in 2024 as a foam-and-cardboard prototype and grew into a two-year project that pulled me into CAD, electronics, aerodynamics and control software.</p>
+        <p>What ties my projects together is access: capable aircraft and instruments built for a fraction of what they usually cost, with every file shared so others can build on them.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="contact" data-reveal>
+        <div>
+          <h2>Get in touch</h2>
+          <p>Questions about a project, an idea to build on, or a use for R.A.M.P.A.T.? I'd like to hear it.</p>
+        </div>
+        <div class="row">
+          <a class="mail" href="mailto:dixitaarit@gmail.com" data-goatcounter-click="email">dixitaarit@gmail.com</a>
+          <button type="button" class="copy" id="copyMail" data-mail="dixitaarit@gmail.com">Copy address</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> Aarit Dixit</span>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
